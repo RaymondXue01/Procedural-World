@@ -132,7 +132,7 @@ public class CreateMesh : MonoBehaviour {
 				int currX = x + j * scale;
 				int currZ = z + i * scale;
 
-				System.Random rng = new System.Random((currX * 73856093) ^ (currZ * 19349663));
+				System.Random rng = new System.Random();
 				if ((float)rng.NextDouble() > treeChance) continue;
 
 				float height = heightGrid[i + 1, j + 1];

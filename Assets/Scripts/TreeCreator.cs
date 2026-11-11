@@ -83,8 +83,8 @@ public class TreeCreator : MonoBehaviour
         GameObject root = new GameObject("Tree");
         root.transform.position = position;
 
-        float x = Random.Range(-8, 8);
-        float z = Random.Range(-8, 8);
+        float x = Random.Range(-30, 30);
+        float z = Random.Range(-30, 30);
         float y = Random.Range(minTrunkHeight, maxTrunkHeight);
         float controlY = Random.Range(1/4f * y, 3/4f * y);
         (Vector3[] skeleton, Frenet[] frenets) = CreateSkeleton(Vector3.zero, new Vector3(0, controlY, 0), new Vector3(x, y, z), trunkSegments);
